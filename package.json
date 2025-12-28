@@ -1,0 +1,16 @@
+{
+  "name": "nex-dev-mentor-landing",
+  "version": "1.0.0",
+  "description": "Landing page for NEX Dev Mentor Telegram AI bot",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "vercel-build": "echo 'Building...'"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
