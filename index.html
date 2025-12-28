@@ -1,121 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEX Dev Mentor - AI Coding Mentor on Telegram</title>
-  <meta name="description" content="NEX Dev Mentor is your AI-powered coding mentor on Telegram. Learn programming step by step, track your progress, and master JavaScript, Python, and more!">
-  <meta name="keywords" content="AI dev mentor, AI coding mentor, learn programming, Telegram bot, learn coding, programming lessons, NEX Dev Mentor">
-  
-  <meta property="og:title" content="NEX Dev Mentor - AI Coding Mentor on Telegram">
-  <meta property="og:description" content="Learn programming step by step with NEX, your AI coding mentor on Telegram. Gamified lessons, notes, and progress tracking.">
-  <meta property="og:image" content="https://files.catbox.moe/tdurit.jpg">
-  <meta property="og:url" content="https://t.me/Nexosus_mentorbot">
-  <meta property="og:type" content="website">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="googleff61335135775788" />
 
-  <link rel="icon" type="image/png" href="https://files.catbox.moe/tdurit.jpg">
-
-  <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+  <title>AI Dev Mentor - Learn Programming with NEX</title>
+  <meta name="description" content="Join NEX AI Dev Mentor and learn programming step by step. JavaScript, Python, Web Development, and more!" />
+  <meta name="keywords" content="AI Dev Mentor, Learn Programming, Dev Mentor, JavaScript, Python, Web Development, AI Mentor" />
+  <link rel="icon" href="https://files.catbox.moe/tdurit.jpg" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-p6bqXrrs7X6cG8HgR5G4Hfj8QJ6PRb6gTbYh6IuhmSXlJ5ZsfXcZf3Vh0oQ5VvMTPQZl8xIqa+FvKwH+FjW8kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #111;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      padding: 20px;
       text-align: center;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      color: #00ffd5;
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      max-width: 600px;
-      line-height: 1.5;
-      color: #f0f0f0;
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1rem;
     }
-    a.button {
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    main h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .cta-btn {
       display: inline-block;
+      margin: 20px 0;
       padding: 15px 30px;
-      font-size: 1.2rem;
-      background: #00ffd5;
-      color: #000;
+      background: #007bff;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
-    a.button:hover {
-      background: #00e0c0;
-      transform: scale(1.05);
-    }
-    .features {
-      margin-top: 3rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      max-width: 800px;
-    }
-    .feature {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 1.5rem;
-      border-radius: 10px;
-      flex: 1 1 200px;
-    }
-    .feature h3 {
-      margin-top: 0;
-      color: #00ffd5;
+    .cta-btn:hover {
+      background: #0056b3;
     }
     footer {
-      margin-top: 4rem;
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
       font-size: 0.9rem;
-      color: #888;
     }
     footer a {
-      color: #00ffd5;
+      color: #fff;
       text-decoration: none;
+      margin: 0 5px;
     }
     footer a:hover {
-      text-decoration: underline;
+      color: #007bff;
     }
   </style>
 </head>
 <body>
-  <h1>NEX Dev Mentor</h1>
-  <p><i class="fas fa-robot"></i> Your AI-powered coding mentor on Telegram. Learn programming step by step, track your progress, and master JavaScript, Python, and more! Perfect for beginners and advanced learners alike.</p>
-  
-  <a href="https://t.me/Nexosus_mentorbot" class="button" target="_blank"><i class="fas fa-rocket"></i> Start Learning Now</a>
 
-  <div class="features">
-    <div class="feature">
-      <h3><i class="fas fa-chalkboard-teacher"></i> Step-by-Step Lessons</h3>
-      <p>Learn programming concepts in bite-sized lessons, guided by AI.</p>
-    </div>
-    <div class="feature">
-      <h3><i class="fas fa-chart-line"></i> Progress Tracking</h3>
-      <p>Track your learning progress and earn points as you complete lessons.</p>
-    </div>
-    <div class="feature">
-      <h3><i class="fas fa-sticky-note"></i> Notes & Gamification</h3>
-      <p>Save your notes, repeat lessons, and enjoy a fun learning experience.</p>
-    </div>
-    <div class="feature">
-      <h3><i class="fas fa-laptop-code"></i> Multiple Tracks</h3>
-      <p>Learn JavaScript, Python, Web Development, and more, tailored to your level.</p>
-    </div>
-  </div>
+  <header>
+    <h1>AI Dev Mentor - NEX</h1>
+    <p>Learn Programming Step by Step with AI-Powered Guidance</p>
+  </header>
+
+  <main>
+    <h2>Start Your Programming Journey Today!</h2>
+    <p>Join <strong>NEX AI Dev Mentor</strong> and learn coding with real, step-by-step lessons. Track your progress, earn points, and master JavaScript, Python, Web Development, and more!</p>
+    <a class="cta-btn" href="https://t.me/Nexosus_mentorbot" target="_blank">
+      <i class="fa-brands fa-telegram"></i> Chat with NEX on Telegram
+    </a>
+    <p>📞 Contact: +233549551004</p>
+  </main>
 
   <footer>
-    © 2025 NEX Dev Mentor | <strong>NEXOSUS</strong> | <strong>Lostboy Tech</strong> | <i class="fas fa-phone"></i> +233 549 551 004 | <a href="https://t.me/Nexosus_mentorbot" target="_blank"><i class="fas fa-paper-plane"></i> Open Bot</a>
+    <p>© 2025 <strong>Nexosus</strong> | Developed by <strong>Lostboy Tech</strong></p>
+    <p>
+      <a href="https://t.me/Nexosus_mentorbot" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a>
+      <a href="tel:+233549551004"><i class="fa-solid fa-phone"></i> Call</a>
+    </p>
   </footer>
+
 </body>
 </html>
